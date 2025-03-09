@@ -1,0 +1,40 @@
+<style type="text/css">
+    .fixed-size-image {
+        width: 260px;
+        height: 400px;
+        object-fit: cover;
+    }
+</style>
+<div id="<%= dom_id book %>">
+  <p>
+    <strong>Title:</strong>
+    <%= book.title %>
+  </p>
+
+  <p>
+    <strong>Isbn:</strong>
+    <%= book.isbn %>
+  </p>
+
+  <p>
+    <strong>Publisher:</strong>
+    <%= book.publisher %>
+  </p>
+
+  <p>
+    <strong>Pub date:</strong>
+    <%= book.pub_date %>
+  </p>
+
+  <p>
+    <strong>Cover:</strong>
+    <%= image_tag (book.cover), class: "fixed-size-image" if book.cover.present? %>
+  </p>
+
+
+  <p>
+    <strong>Price:</strong>
+    <%= book.price %>
+  </p>
+
+</div>
