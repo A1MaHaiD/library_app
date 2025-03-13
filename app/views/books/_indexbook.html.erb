@@ -1,0 +1,11 @@
+<tr>
+  <td><%= image_tag(book.cover,width:"20%", height: "20%", alt: "book cover") %></td>
+  <td>
+    <strong>Title: </strong>&nbsp;<%= book.title %><br>
+    <strong>ISBN: </strong>&nbsp;<%= book.isbn %><br>
+    <strong>Publisher: </strong>&nbsp;<%= book.publisher %><br>
+    <strong>Pub date: </strong>&nbsp;<%= book.pub_date %><br>
+    <strong>Price: </strong>&nbsp;<%= book.price %><br>
+    <% link_to "Show this book", book %>
+  </td>
+</tr>

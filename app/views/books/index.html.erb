@@ -4,15 +4,20 @@
 
 <h1>Books</h1>
 
-<div id="books">
+<table class="table table-hover table-fixed">
+  <thead>
+  <tr>
+    <th scope="col">Cover</th>
+    <th scope="col">Info</th>
+  </tr>
+  </thead>
+  <tbody>
   <% @books.each do |book| %>
-    <%= render book %>
-    <p>
-      <%= link_to "Show this book", book %>
-    </p>
+    <%= render "indexbook", book: book %>
   <% end %>
-</div>
+  </tbody>
+</table>
 
 <%= paginate @books %>
 
-<%= link_to "New book", new_book_path %>
+<%= link_to "New book", new_book_path, class: "btn btn-primary" %>
