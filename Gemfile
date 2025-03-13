@@ -54,9 +54,9 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   # Add MySql 8.0.36 gems
-  gem 'mysql2', '~> 0.5.6'
+  gem "mysql2", "~> 0.5.6"
   # Add pagination Kaminari
-  gem 'kaminari', '~> 1.2', '>= 1.2.2'
+  gem "kaminari", "~> 1.2", ">= 1.2.2"
   gem "web-console"
 end
 
