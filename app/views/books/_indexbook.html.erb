@@ -7,5 +7,6 @@
     <strong>Pub date: </strong>&nbsp;<%= book.pub_date %><br>
     <strong>Price: </strong>&nbsp;<%= book.price %><br>
     <% link_to "Show this book", book %>
+    <%= link_to "Edit this book", edit_book_path(book) %>
   </td>
 </tr>
